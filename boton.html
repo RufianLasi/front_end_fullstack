@@ -1,0 +1,75 @@
+<html>
+    <body>
+        <script>
+
+            function mostrarLuffy(){
+
+                alert("que paaaaaaa")
+                console.log("logeando")            
+                document.getElementById("personaje").innerHTML = "Monkey D. Luffy"
+            }
+            function mostrarTripulacion(){
+
+              let seleccion = document.querySelector(
+                'input[name="tripulacion"]:checked');  
+
+                if (seleccion){
+                    document.getElementById("resultado").innerHTML=
+                    "Elegiste " + seleccion.value;
+                }else{
+                    
+                    document.getElementById("resultado").innerHTML=
+                    "debes elegir una tripulacion"
+                }
+            }
+
+
+        
+        </script>
+
+        <h2 id = "personaje"> selecciona un personaje</h2>
+
+        <button onclick = "mostrarLuffy()"> 
+            luffy
+        </button>
+
+        <div>
+        <h2>elige una tripulacion</h2>
+        <label>
+            <input type="radio" name="tripulacion" value="sombrero de paja">
+            sombrero de paja
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="tripulacion" value="marina">
+            marina
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="tripulacion" value="barbanegra">
+            barbanegra
+        </label>
+
+        <br><br>
+
+        <button onclick="mostrarTripulacion()">
+            confirmar
+        </button>
+
+        <p id="resultado"></p>
+
+        </div>
+
+        <div>
+
+            <h2> mostrar habilidades</h2>
+
+            <label>
+                
+            </label>
+
+        </div>
+
+    
+    </body>
+</html>
